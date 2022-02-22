@@ -1,5 +1,10 @@
 import '../styles/app.scss';
+import Card from './Card';
 
 export default function App() {
-  return <h1>App.jsx</h1>;
+  return (
+    <div className='container'>
+      <Card />
+    </div>
+  );
 }

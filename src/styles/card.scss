@@ -1,0 +1,11 @@
+@import './palette.scss';
+
+.card {
+  margin: auto;
+  box-shadow: hsl(217, 54%, 10%) 0 2rem 2.8rem 0;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 32rem;
+
+  background-color: $midnight-blue;
+}
