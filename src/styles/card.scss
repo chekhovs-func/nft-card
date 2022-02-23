@@ -9,35 +9,66 @@
   box-shadow: hsl(217, 54%, 10%) 0 0 4rem 3rem;
   border-radius: 1rem;
   width: 20rem;
-  height: 32rem;
+  height: 35rem;
 
   background-color: $midnight-blue;
 
+  aside {
+    display: flex;
+  }
+
   .nft {
-    width: 17.5rem;
+    width: 17.4rem;
+
+    .image {
+      margin: 1.3rem 0;
+      border-radius: 0.5rem;
+    }
+
+    .title {
+      justify-self: left;
+
+      margin-bottom: 0.9rem;
+
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      color: $white;
+    }
+
+    .body {
+      margin-bottom: 0.9rem;
+
+      font-size: 1rem;
+      font-weight: 300;
+
+      color: $soft-blue;
+    }
   }
 
-  .image {
-    margin: 1.3rem;
-    border-radius: 0.5rem;
-  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .title {
-    justify-self: left;
+    width: 17.4rem;
 
-    margin-bottom: 0.7rem;
+    .value {
+      margin-left: .5rem;
+    }
 
-    font-size: 1.4rem;
-    font-weight: 600;
+    .eth {
+      font-size: 0.9rem;
+      font-weight: 400;
 
-    color: $white;
-  }
+      color: $cyan;
+    }
 
-  .body {
+    .countdown {
+      font-size: 0.9rem;
+      font-weight: 300;
 
-    font-size: 1rem;
-    font-weight: 300;
-
-    color: $soft-blue;
+      color: $soft-blue;
+    }
   }
 }

@@ -1,4 +1,6 @@
 import '../styles/card.scss';
+import { ReactComponent as EthIcon } from '../assets/icon-ethereum.svg';
+import { ReactComponent as ClockIcon } from '../assets/icon-clock.svg';
 
 export default function Card() {
   const equilibrium = {
@@ -8,14 +10,26 @@ export default function Card() {
   };
 
   return (
-    <div className='card'>
-      <img
-        className='nft image'
-        src={equilibrium.src}
-        alt='An NFT named Equilibrium by Jules Wyvern'
-      />
-      <h1 className='nft title'>{equilibrium.title}</h1>
-      <p className='nft body'>{equilibrium.desc}</p>
-    </div>
+    <section className='card'>
+      <article className='nft'>
+        <img
+          src={equilibrium.src}
+          alt='An NFT named Equilibrium by Jules Wyvern'
+          className='nft image'
+        />
+        <h1 className='title'>{equilibrium.title}</h1>
+        <p className='body'>{equilibrium.desc}</p>
+      </article>
+      <article className='info'>
+        <aside>
+          <EthIcon />
+          <h2 className='eth value'>0.041ETH</h2>
+        </aside>
+        <aside>
+          <ClockIcon />
+          <h2 className='countdown value'>3 days left</h2>
+        </aside>
+      </article>
+    </section>
   );
 }
