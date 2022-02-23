@@ -1,11 +1,43 @@
 @import './palette.scss';
 
 .card {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
   margin: auto;
-  box-shadow: hsl(217, 54%, 10%) 0 2rem 2.8rem 0;
+  box-shadow: hsl(217, 54%, 10%) 0 0 4rem 3rem;
   border-radius: 1rem;
   width: 20rem;
   height: 32rem;
 
   background-color: $midnight-blue;
+
+  .nft {
+    width: 17.5rem;
+  }
+
+  .image {
+    margin: 1.3rem;
+    border-radius: 0.5rem;
+  }
+
+  .title {
+    justify-self: left;
+
+    margin-bottom: 0.7rem;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    color: $white;
+  }
+
+  .body {
+
+    font-size: 1rem;
+    font-weight: 300;
+
+    color: $soft-blue;
+  }
 }
