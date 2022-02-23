@@ -19,7 +19,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Live Page
 
-A live version of this repo can be found [here](https://chekhovs-func.github.io/qr-code/).
+A live version of this repo can be found [here](https://chekhovs-func.github.io/nft-card/).
 
 ### Built with
 
