@@ -12,7 +12,7 @@ export default function Card() {
           className='nft image'
         />
         <h1 className='title'>Equilibrium #3429</h1>
-        <p className='body'>Our Equilibrium collection prokotes balance and calm.</p>
+        <p className='body'>Our Equilibrium collection promotes balance and calm.</p>
       </article>
       <article className='info'>
         <aside>
