@@ -6,10 +6,9 @@
   display: flex;
 
   margin: auto;
-  box-shadow: hsl(217, 54%, 10%) 0 0 4rem 3rem;
+  box-shadow: rgba($color: #000000, $alpha: 0.11) 0 0 4rem 3rem;
   border-radius: 1rem;
   width: 20rem;
-  height: 35rem;
 
   background-color: $midnight-blue;
 
@@ -23,21 +22,27 @@
     .image {
       margin: 1.3rem 0;
       border-radius: 0.5rem;
+      transition: 2s filter linear;
+    }
+
+    .image:hover {
+      filter: blur(0.2rem);
+      transition: 2s filter linear;
     }
 
     .title {
       justify-self: left;
 
-      margin-bottom: 0.9rem;
+      margin-bottom: 1rem;
 
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 600;
 
       color: $white;
     }
 
     .body {
-      margin-bottom: 0.9rem;
+      margin-bottom: 1rem;
 
       font-size: 1rem;
       font-weight: 300;
@@ -51,10 +56,12 @@
     justify-content: space-between;
     align-items: center;
 
+    border-bottom: 0.01em solid rgba($color: $soft-blue, $alpha: 0.25);
+    padding-bottom: 1rem;
     width: 17.4rem;
 
     .value {
-      margin-left: .5rem;
+      margin-left: 0.5rem;
     }
 
     .eth {
@@ -69,6 +76,35 @@
       font-weight: 300;
 
       color: $soft-blue;
+    }
+  }
+
+  .artist {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin: 1.25rem 0;
+    width: 17.4rem;
+
+    .avatar {
+      border: 0.075rem solid $white;
+      border-radius: 100%;
+      width: 2rem;
+    }
+
+    .artist-info {
+      margin-left: 1rem;
+
+      font-size: 1rem;
+      font-weight: 300;
+
+      color: $soft-blue;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
     }
   }
 }

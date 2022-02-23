@@ -3,22 +3,16 @@ import { ReactComponent as EthIcon } from '../assets/icon-ethereum.svg';
 import { ReactComponent as ClockIcon } from '../assets/icon-clock.svg';
 
 export default function Card() {
-  const equilibrium = {
-    title: 'Equilibrium #3429',
-    src: './assets/image-equilibrium.jpg',
-    desc: 'Our Equilibrium collection prokotes balance and calm.',
-  };
-
   return (
     <section className='card'>
       <article className='nft'>
         <img
-          src={equilibrium.src}
+          src='./assets/image-equilibrium.jpg'
           alt='An NFT named Equilibrium by Jules Wyvern'
           className='nft image'
         />
-        <h1 className='title'>{equilibrium.title}</h1>
-        <p className='body'>{equilibrium.desc}</p>
+        <h1 className='title'>Equilibrium #3429</h1>
+        <p className='body'>Our Equilibrium collection prokotes balance and calm.</p>
       </article>
       <article className='info'>
         <aside>
@@ -29,6 +23,16 @@ export default function Card() {
           <ClockIcon />
           <h2 className='countdown value'>3 days left</h2>
         </aside>
+      </article>
+      <article className='artist'>
+        <img
+          src='./assets/image-avatar.png'
+          alt='An avatar of the artist, Jules Wyvern'
+          className='avatar'
+        />
+        <p className='artist-info'>
+          Creation of <a href='#'>Jules Wyvern</a>
+        </p>
       </article>
     </section>
   );
