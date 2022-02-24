@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nft-card/static/css/main.78245271.css",
-    "main.js": "/nft-card/static/js/main.2b5148d9.js",
+    "main.css": "/nft-card/static/css/main.01899aba.css",
+    "main.js": "/nft-card/static/js/main.81b57213.js",
     "index.html": "/nft-card/index.html",
     "static/media/icon-clock.svg": "/nft-card/static/media/icon-clock.991a65225dab4fadc84345ecb35faa1b.svg",
     "static/media/icon-ethereum.svg": "/nft-card/static/media/icon-ethereum.5221f33297e5dc863451e2da9a758c12.svg",
-    "main.78245271.css.map": "/nft-card/static/css/main.78245271.css.map",
-    "main.2b5148d9.js.map": "/nft-card/static/js/main.2b5148d9.js.map"
+    "main.01899aba.css.map": "/nft-card/static/css/main.01899aba.css.map",
+    "main.81b57213.js.map": "/nft-card/static/js/main.81b57213.js.map"
   },
   "entrypoints": [
-    "static/css/main.78245271.css",
-    "static/js/main.2b5148d9.js"
+    "static/css/main.01899aba.css",
+    "static/js/main.81b57213.js"
   ]
 }
