@@ -7,7 +7,7 @@ export default function Card() {
     <section className='card'>
       <article className='nft'>
         <img
-          src='/images/image-equilibrium.jpg'
+          src='images/image-equilibrium.jpg'
           alt='An NFT named Equilibrium by Jules Wyvern'
           className='nft image'
         />
@@ -28,7 +28,7 @@ export default function Card() {
 
       <article className='artist'>
         <img
-          src='/images/image-avatar.png'
+          src='images/image-avatar.png'
           alt='An avatar of the artist, Jules Wyvern'
           className='avatar'
         />
