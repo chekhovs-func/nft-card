@@ -19,14 +19,34 @@
   .nft {
     width: 17.4rem;
 
+    .view {
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+
+      opacity: 0;
+
+      display: flex;
+
+      transition: 1s opacity linear;
+
+      border-radius: 0.5rem;
+      margin: 1.3rem 0;
+      width: 17.4rem;
+      height: 17.4rem;
+
+      background-color: $cyan;
+    }
+
+    .view:hover {
+      opacity: 0.65;
+
+      transition: 0.25s opacity linear;
+    }
+
     .image {
       margin: 1.3rem 0;
       border-radius: 0.5rem;
-      transition: 2s filter linear;
-    }
-
-    .image:hover {
-      filter: blur(0.2rem);
       transition: 2s filter linear;
     }
 

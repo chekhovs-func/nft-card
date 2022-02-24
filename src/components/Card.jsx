@@ -1,4 +1,5 @@
 import '../styles/card.scss';
+import { ReactComponent as ViewIcon } from '../assets/icon-view.svg';
 import { ReactComponent as EthIcon } from '../assets/icon-ethereum.svg';
 import { ReactComponent as ClockIcon } from '../assets/icon-clock.svg';
 
@@ -6,6 +7,9 @@ export default function Card() {
   return (
     <section className='card'>
       <article className='nft'>
+        <div className='view'>
+          <ViewIcon className='view-icon' />
+        </div>
         <img
           src='images/image-equilibrium.jpg'
           alt='An NFT named Equilibrium by Jules Wyvern'
