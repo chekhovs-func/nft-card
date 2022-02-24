@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className='container'>
       <Card />
+
       <p className='footer-body'>
         Challenge by{' '}
         <a
