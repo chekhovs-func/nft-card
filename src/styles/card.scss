@@ -3,7 +3,6 @@
 .card {
   align-items: center;
   flex-direction: column;
-  display: flex;
 
   margin: auto;
   box-shadow: rgba($color: #000000, $alpha: 0.1) 0 25px 50px 0;
@@ -12,6 +11,7 @@
   width: 327px;
 
   background-color: $midnight-blue;
+  transition: 0.25s ease-in-out;
 
   aside {
     display: flex;
@@ -52,6 +52,8 @@
     .image {
       margin-bottom: 24px;
       border-radius: 8px;
+
+      transition: 0.25s ease-in-out;
     }
 
     .title {
@@ -77,6 +79,7 @@
       font-weight: 300;
 
       color: $soft-blue;
+      transition: 0.25s ease-in-out;
     }
   }
 
@@ -88,6 +91,8 @@
     border-bottom: 1px solid rgba($color: $soft-blue, $alpha: 0.25);
     padding-bottom: 16px;
     width: 278px;
+
+    transition: 0.25s ease-in-out;
 
     .value {
       margin-left: 6.5px;
@@ -139,6 +144,57 @@
 
       a:hover {
         color: $cyan;
+      }
+    }
+  }
+}
+
+@media (min-width: 475px) {
+  .card {
+    width: 350px;
+
+    .nft {
+      .view-container {
+        width: 302px;
+        height: 302px;
+      }
+
+      .image {
+        width: 302px;
+
+        margin-bottom: 24px;
+      }
+
+      .title {
+        margin-bottom: 16px;
+      }
+
+      .body {
+        width: 302px;
+        margin-bottom: 24px;
+
+        font-size: 18px;
+      }
+    }
+    .info {
+      width: 302px;
+
+      padding-bottom: 25px;
+
+      .eth {
+        font-size: 16px;
+      }
+
+      .countdown {
+        font-size: 16px;
+      }
+    }
+
+    .artist {
+      margin-bottom: 32px;
+
+      .artist-info {
+        font-size: 16px;
       }
     }
   }
