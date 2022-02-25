@@ -11,7 +11,7 @@ export default function Card() {
             <ViewIcon className='view-icon' />
         </div>
         <img
-          src='images/image-equilibrium.jpg'
+          src='assets/image-equilibrium.jpg'
           alt='An NFT named Equilibrium by Jules Wyvern'
           className='nft image'
         />
@@ -32,7 +32,7 @@ export default function Card() {
 
       <article className='artist'>
         <img
-          src='images/image-avatar.png'
+          src='assets/image-avatar.png'
           alt='An avatar of the artist, Jules Wyvern'
           className='avatar'
         />
