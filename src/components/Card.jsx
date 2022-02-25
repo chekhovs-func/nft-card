@@ -7,8 +7,8 @@ export default function Card() {
   return (
     <section className='card'>
       <article className='nft'>
-        <div className='view'>
-          <ViewIcon className='view-icon' />
+        <div className='view-container'>
+            <ViewIcon className='view-icon' />
         </div>
         <img
           src='images/image-equilibrium.jpg'
@@ -22,7 +22,7 @@ export default function Card() {
       <article className='info'>
         <aside>
           <EthIcon />
-          <h2 className='eth value'>0.041ETH</h2>
+          <h2 className='eth value'>0.041 ETH</h2>
         </aside>
         <aside>
           <ClockIcon />

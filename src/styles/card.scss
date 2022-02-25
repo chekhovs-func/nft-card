@@ -6,9 +6,10 @@
   display: flex;
 
   margin: auto;
-  box-shadow: rgba($color: #000000, $alpha: 0.11) 0 0 4rem 3rem;
-  border-radius: 1rem;
-  width: 20rem;
+  box-shadow: rgba($color: #000000, $alpha: 0.1) 0 25px 50px 0;
+  border-radius: 15px;
+  padding: 24px 24px 0 24px;
+  width: 327px;
 
   background-color: $midnight-blue;
 
@@ -17,54 +18,62 @@
   }
 
   .nft {
-    width: 17.4rem;
+    width: 278px;
 
-    .view {
+    .view-container {
       position: absolute;
       justify-content: center;
       align-items: center;
 
-      opacity: 0;
-
       display: flex;
 
-      transition: 0.25s opacity linear;
+      transition: 0.25s ease-in-out;
 
-      border-radius: 0.5rem;
-      margin: 1.3rem 0;
-      width: 17.4rem;
-      height: 17.4rem;
+      border-radius: 8px;
+      width: 278px;
+      height: 278px;
 
-      background-color: $cyan;
+      background-color: rgba(0, 255, 247, 0);
+
+      .view-icon {
+        opacity: 0;
+
+        transition: 0.25s ease-in-out;
+      }
+    }
+    .view-container:hover {
+      background-color: rgba(0, 255, 247, 0.5);
     }
 
-    .view:hover {
-      opacity: 0.5;
-
-      transition: 0.25s opacity linear;
+    .view-container:hover .view-icon {
+      opacity: 1;
     }
 
     .image {
-      margin: 1.3rem 0;
-      border-radius: 0.5rem;
-      transition: 2s filter linear;
+      margin-bottom: 24px;
+      border-radius: 8px;
     }
 
     .title {
       justify-self: left;
 
-      margin-bottom: 1rem;
+      margin-bottom: 12px;
 
-      font-size: 1.35rem;
+      font-size: 22px;
       font-weight: 600;
 
       color: $white;
+      transition: 0.25s ease-in-out;
+    }
+
+    .title:hover {
+      color: $cyan;
     }
 
     .body {
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
 
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 300;
 
       color: $soft-blue;
@@ -76,23 +85,23 @@
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 0.01em solid rgba($color: $soft-blue, $alpha: 0.25);
-    padding-bottom: 1rem;
-    width: 17.4rem;
+    border-bottom: 1px solid rgba($color: $soft-blue, $alpha: 0.25);
+    padding-bottom: 16px;
+    width: 278px;
 
     .value {
-      margin-left: 0.5rem;
+      margin-left: 6.5px;
     }
 
     .eth {
-      font-size: 0.9rem;
+      font-size: 15px;
       font-weight: 400;
 
       color: $cyan;
     }
 
     .countdown {
-      font-size: 0.9rem;
+      font-size: 15px;
       font-weight: 300;
 
       color: $soft-blue;
@@ -104,19 +113,19 @@
     justify-content: left;
     align-items: center;
 
-    margin: 1.25rem 0;
-    width: 17.4rem;
+    margin: 16px 0 24px 0;
+    width: 278px;
 
     .avatar {
       border: 0.075rem solid $white;
       border-radius: 100%;
-      width: 2rem;
+      width: 33px;
     }
 
     .artist-info {
-      margin-left: 1rem;
+      margin-left: 16px;
 
-      font-size: 1rem;
+      font-size: 15px;
       font-weight: 300;
 
       color: $soft-blue;
@@ -124,6 +133,12 @@
       a {
         text-decoration: none;
         color: $white;
+
+        transition: 0.25s ease-in-out;
+      }
+
+      a:hover {
+        color: $cyan;
       }
     }
   }

@@ -22,17 +22,31 @@
 
   background-color: $ink-blue;
 
-  .footer-body {
-    position: absolute;
-    bottom: 0.8rem;
+  .attribution {
+    justify-content: center;
+    display: flex;
 
-    font-size: 0.8rem;
-    color: $soft-blue;
+    width: 100vw;
 
-    .footer-link {
-      font-weight: 300;
-      text-decoration: none;
+    .body {
+      position: absolute;
+      bottom: 16px;
+
+      font-size: 12px;
       color: $white;
+      transition: all 0.25s ease-in-out;
+
+      .link {
+        font-weight: 300;
+        text-decoration: none;
+        color: $soft-blue;
+      }
+    }
+
+    @media (min-width: 475px) {
+      .body {
+        font-size: 16px;
+      }
     }
   }
 }
