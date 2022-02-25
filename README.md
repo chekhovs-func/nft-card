@@ -1,4 +1,4 @@
-# Frontend Mentor - NFT preview card component solution
+# NFT Card
 
 ## Table of contents
 
@@ -12,10 +12,9 @@
 
 This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
-
 ### Screenshot
 
-![](public/images/desktop-screenshot.jpg)
+![](public/images/desktop-preview.png)
 
 ### Live Page
 
@@ -32,4 +31,3 @@ A live version of this repo can be found [here](https://chekhovs-func.github.io/
 ## Author
 
 - Github - [Robert Butler](https://github.com/chekhovs-func)
-- Frontend Mentor - [@chekhovs-func](https://www.frontendmentor.io/profile/chekhovs-func)
